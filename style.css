@@ -8,6 +8,8 @@ body {
   font-family: "Nunito", sans-serif;
   display: flex;
   flex-direction: column;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 header {
@@ -30,21 +32,19 @@ header {
 
 .links ul {
   display: flex;
-  align-items: flex-end;
-  flex-direction: row;
   gap: 30px;
   list-style-type: none;
-  padding: 0 30vw;
+  padding: 0 25vw;
 }
 
 .links a:hover {
-  color: #fca60f;
+  color: red;
 }
 
 .logo img {
   width: 100px;
   height: 30px;
-  padding: 0 5vw;
+  margin-left: 5vw;
 }
 
 .botao {
@@ -64,6 +64,7 @@ h2 {
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  font-size: 80px;
 }
 
 .home {
@@ -76,11 +77,14 @@ h2 {
   height: 100vh;
   padding: 100px;
   background-color: #fff;
-  /* background-image: url(img/principal.png);
-  background-color: #00000055;
-  background-blend-mode: darken;
+  background-image: url(img/programacao.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  background-position: right top; */
+  background-position: center;
+}
+
+h1 {
+  color: #fff;
 }
 
 /* FPOO */
@@ -90,7 +94,7 @@ h2 {
   text-align: justify;
   width: 100%;
   height: 100vh;
-  background-color: rgb(160, 187, 236);
+  background-color: #98fb98;
 }
 
 .fpoo .bloco1,
@@ -141,7 +145,7 @@ img {
   width: 100%;
   height: 100vh;
   padding: 15px;
-  background-color: rgb(162, 247, 190);
+  background-color: #ffffe0;
 }
 
 .lima .um,
@@ -171,39 +175,45 @@ img {
 
 /* SOP */
 .sop {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   padding: 15px;
   background-color: #f1dbf9;
 }
 
-.sop .imagens p {
+h3 {
+  font-size: 40px;
+}
+
+.sop .bloco1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 95vw;
+  margin-left: 50px;
+}
+
+.sop .bloco2 {
+  display: flex;
+  width: 100%; 
+  justify-content: space-around;
+  margin-top: 5vh;
+}
+
+.bloco2 h3 {
+  font-size: 30px;
+  margin-top: 20px;
   max-width: 350px;
 }
 
-.sop .um,
-.sop .dois {
-  padding: 30px; /* Só coloquei pra ficar com uma bordinha em volta */
+.bloco2 p {
+  margin-top: 10px;
+  max-width: 350px;
 }
 
-.sop .um .texts {
-  display: flex; /* Mudando o display pra flex */
-  gap: 20px; /* Espaçamento entre as caixas */
-}
-
-.sop .dois .texts {
-  width: 100%; /* Definindo a largura de 100% para a caixa de texto */
-  display: flex; /* Mudando o display pra flex */
-  justify-content: space-around; /* Deixando um espaçamento igual entre as caixas */
-}
-
-.sop .dois .texts .content {
-  width: 45%; /* Definindo a largura da caixa */
-}
-
-.sop .imagens {
-  display: flex; /* Mudando o display pra flex */
-  width: 100%; /* Definindo a largura de 100% para a caixa de texto */
+.sop .videos {
+   display: flex; /* Mudando o display pra flex */ 
+  width: 100%; /*  Definindo a largura de 100% para a caixa de texto  */
   justify-content: space-around;
 }
 
@@ -212,6 +222,7 @@ img {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-color: #000;
 }
 
 .hare .item-hare-container {
