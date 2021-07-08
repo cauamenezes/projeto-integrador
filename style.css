@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 7vh;
+  width: 100vw;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.links a {
+  color: #242424;
+  text-decoration: none;
+  user-select: none;
+  font-size: 20px;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+.links ul {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  gap: 30px;
+  list-style-type: none;
+  padding: 0 30vw;
+}
+
+.links a:hover {
+  color: #fca60f;
+}
+
+.logo img {
+  width: 100px;
+  height: 30px;
+  padding: 0 5vw;
+}
+
+.botao {
+  /* display: flex;
+  text-decoration: none;
+  color: white;
+  /* font-size: 25px; */
+  /* width: 3px;
+  height: 30px;
+  background-color: #FCA60F;;
+  border-radius: 5px;
+  padding: 0 50vw; */ 
+}
+
+h2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-size: 30px;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  background-color: #fff;
+  /* background-image: url(img/principal.png);
+  background-color: #00000055;
+  background-blend-mode: darken;
+  background-size: cover;
+  background-position: right top; */
+}
+
+/* FPOO */
+.fpoo {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(160, 187, 236);
+}
+
+.fpoo .bloco1,
+.fpoo .bloco2 {
+  padding: 30px; /* Só coloquei pra ficar com uma bordinha em volta */
+  max-width: 1000px;
+}
+
+.fpoo .texto1,
+.texto2 {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 300px;
+}
+
+.fpoo .texto2 {
+  margin-top: -1px;
+}
+
+.fpoo .imagem1,
+.imagem2 {
+  margin-right: -200px;
+}
+
+.fpoo .imagem2 {
+  margin-top: -40px;
+  margin-right: -160px;
+}
+
+.fpoo .um .texts {
+  display: flex; /* Mudando o display pra flex */
+  gap: 30px; /* Espaçamento entre as caixas */
+}
+
+img {
+  height: 250px;
+  width: 350px;
+}
+
+.fpoo .dois .texts {
+  width: 100%; /* Definindo a largura de 100% para a caixa de texto */
+  display: flex; /* Mudando o display pra flex */
+  justify-content: space-between; /* Deixando um espaçamento igual entre as caixas */
+}
+
+/* LIMA */
+.lima {
+  width: 100%;
+  height: 100vh;
+  padding: 15px;
+  background-color: rgb(162, 247, 190);
+}
+
+.lima .um,
+.lima .dois {
+  padding: 30px; /* Só coloquei pra ficar com uma bordinha em volta */
+  margin-top: 15px;
+}
+
+.lima .um .texts {
+  display: flex; /* Mudando o display pra flex */
+  gap: 20px; /* Espaçamento entre as caixas */
+  margin-left: 150px;
+}
+
+.lima .dois .texts {
+  width: 100%; /* Definindo a largura de 100% para a caixa de texto */
+  display: flex; /* Mudando o display pra flex */
+  justify-content: space-between; /* Deixando um espaçamento igual entre as caixas */
+}
+
+.lima .imagens {
+  display: flex; /* Mudando o display pra flex */
+  width: 100%; /* Definindo a largura de 100% para a caixa de texto */
+  justify-content: space-around;
+  margin-left: 70px;
+}
+
+/* SOP */
+.sop {
+  width: 100%;
+  height: 100vh;
+  padding: 15px;
+  background-color: #f1dbf9;
+}
+
+.sop .imagens p {
+  max-width: 350px;
+}
+
+.sop .um,
+.sop .dois {
+  padding: 30px; /* Só coloquei pra ficar com uma bordinha em volta */
+}
+
+.sop .um .texts {
+  display: flex; /* Mudando o display pra flex */
+  gap: 20px; /* Espaçamento entre as caixas */
+}
+
+.sop .dois .texts {
+  width: 100%; /* Definindo a largura de 100% para a caixa de texto */
+  display: flex; /* Mudando o display pra flex */
+  justify-content: space-around; /* Deixando um espaçamento igual entre as caixas */
+}
+
+.sop .dois .texts .content {
+  width: 45%; /* Definindo a largura da caixa */
+}
+
+.sop .imagens {
+  display: flex; /* Mudando o display pra flex */
+  width: 100%; /* Definindo a largura de 100% para a caixa de texto */
+  justify-content: space-around;
+}
+
+/* HARE */
+.hare {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.hare .item-hare-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.hare .item-hare {
+  display: flex;
+  background-color: #ffe3d8;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.hare img {
+  height: 80%;
+}
+
+footer {
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  ;
+  height: 40px;
+  background-color: #ffe3d8;
+}
