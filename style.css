@@ -12,21 +12,24 @@ body {
   overflow-x: hidden;
 }
 
+p {
+  font-size: 17px;
+}
+
 header {
   height: 7vh;
   width: 100vw;
   background-color: #000;
   display: flex;
   align-items: center;
-  /* justify-content: space-between; */
+  justify-content: center;
 }
 
 .links a {
-  color: #242424;
   text-decoration: none;
   user-select: none;
   font-size: 20px;
-  transition: all 0.5s;
+  transition: all 1s;
   color: #fff;
 }
 
@@ -34,7 +37,6 @@ header {
   display: flex;
   gap: 30px;
   list-style-type: none;
-  padding: 0 25vw;
 }
 
 .links a:hover {
@@ -44,27 +46,38 @@ header {
 .logo img {
   width: 100px;
   height: 30px;
-  margin-left: 5vw;
+  position: absolute;
+  left: 10vw;
+  top: 2vh;
 }
 
 .botao {
-  /* display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-decoration: none;
   color: white;
-  /* font-size: 25px; */
-  /* width: 3px;
-  height: 30px;
-  background-color: #FCA60F;;
+  font-size: 15px;
+  width: 200px;
+  height: 50px;
+  background-color: red;
   border-radius: 5px;
-  padding: 0 50vw; */ 
+  position: absolute;
+  top: 1vh;
+  right: 6vw;
+  transition: all 1s;
+}
+
+.botao:hover {
+  color: #000;
 }
 
 h2 {
-  width: 100%;
   display: flex;
   justify-content: center;
   margin-top: 10px;
   font-size: 80px;
+  width: 100vw;
 }
 
 .home {
@@ -73,7 +86,7 @@ h2 {
   text-align: center;
   align-items: center;
   font-size: 30px;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   padding: 100px;
   background-color: #fff;
@@ -91,92 +104,83 @@ h1 {
 .fpoo {
   display: flex;
   flex-direction: column;
-  text-align: justify;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-color: #98fb98;
+  gap: 100px;
 }
 
-.fpoo .bloco1,
+.fpoo img {
+  width: 500px;
+}
+
+.fpoo .bloco1 img {
+  position: absolute;
+  right: 40px;
+  top: 1150px;
+}
+
+.fpoo .bloco2 img {
+  position: absolute;
+  right: 40px;
+  top: 1600px;
+}
+
+.fpoo .bloco1 {
+  margin-left: 50px;
+  max-width: 60vw;
+  flex-direction: co;
+}
+
 .fpoo .bloco2 {
-  padding: 30px; /* Só coloquei pra ficar com uma bordinha em volta */
-  max-width: 1000px;
+  margin-left: 50px;
+  margin-top: 100px;
+  max-width: 90vw;
 }
 
-.fpoo .texto1,
-.texto2 {
-  margin-top: 50px;
-  margin-left: 100px;
-  margin-right: 300px;
+.fpoo p {
+  max-width: 50vw;
+  margin-top: 20px;
 }
 
-.fpoo .texto2 {
-  margin-top: -1px;
-}
-
-.fpoo .imagem1,
-.imagem2 {
-  margin-right: -200px;
-}
-
-.fpoo .imagem2 {
-  margin-top: -40px;
-  margin-right: -160px;
-}
-
-.fpoo .um .texts {
-  display: flex; /* Mudando o display pra flex */
-  gap: 30px; /* Espaçamento entre as caixas */
-}
-
-img {
-  height: 250px;
-  width: 350px;
-}
-
-.fpoo .dois .texts {
-  width: 100%; /* Definindo a largura de 100% para a caixa de texto */
-  display: flex; /* Mudando o display pra flex */
-  justify-content: space-between; /* Deixando um espaçamento igual entre as caixas */
+.fpoo h3 {
+  max-width: 50vw;
 }
 
 /* LIMA */
 .lima {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
   height: 100vh;
-  padding: 15px;
   background-color: #ffffe0;
+  gap: 50px;
 }
 
-.lima .um,
-.lima .dois {
-  padding: 30px; /* Só coloquei pra ficar com uma bordinha em volta */
-  margin-top: 15px;
+.lima p {
+  max-width: 88vw;
+  margin-top: 20px;
 }
 
-.lima .um .texts {
-  display: flex; /* Mudando o display pra flex */
-  gap: 20px; /* Espaçamento entre as caixas */
-  margin-left: 150px;
+.lima .bloco1, .bloco2 {
+  margin-left: 6.5vw;
 }
 
-.lima .dois .texts {
-  width: 100%; /* Definindo a largura de 100% para a caixa de texto */
-  display: flex; /* Mudando o display pra flex */
-  justify-content: space-between; /* Deixando um espaçamento igual entre as caixas */
+.lima img {
+  width: 500px;
 }
 
-.lima .imagens {
-  display: flex; /* Mudando o display pra flex */
-  width: 100%; /* Definindo a largura de 100% para a caixa de texto */
+.lima .bloco3 {
+  display: flex;
+  flex-direction: row;
   justify-content: space-around;
-  margin-left: 70px;
+  align-items: center;
 }
 
 /* SOP */
 .sop {
-  width: 100vw;
   height: 100vh;
+  width: 100vw;
   padding: 15px;
   background-color: #f1dbf9;
 }
@@ -189,32 +193,26 @@ h3 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  max-width: 95vw;
+  max-width: 90vw;
   margin-left: 50px;
 }
 
 .sop .bloco2 {
   display: flex;
-  width: 100%; 
   justify-content: space-around;
-  margin-top: 5vh;
+  margin-top: 7vh;
+  margin-left: 0px;
 }
 
-.bloco2 h3 {
+.sop .bloco2 h3 {
   font-size: 30px;
   margin-top: 20px;
   max-width: 350px;
 }
 
-.bloco2 p {
+.sop .bloco2 p {
   margin-top: 10px;
   max-width: 350px;
-}
-
-.sop .videos {
-   display: flex; /* Mudando o display pra flex */ 
-  width: 100%; /*  Definindo a largura de 100% para a caixa de texto  */
-  justify-content: space-around;
 }
 
 /* HARE */
@@ -222,33 +220,48 @@ h3 {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100vw;
   background-color: #000;
 }
 
-.hare .item-hare-container {
+.hare h2 {
+  background-color: #ffe3d8;
+  margin-top: 0;
+}
+
+.hare p {
+  max-width: 45vw;
+}
+
+.hare .bloco-hare {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 7px;
 }
 
-.hare .item-hare {
+.hare .item-bloco {
   display: flex;
-  background-color: #ffe3d8;
   flex-grow: 1;
-  justify-content: center;
   align-items: center;
+  gap: 90px;
+  background-color: #ffe3d8;
 }
 
 .hare img {
-  height: 80%;
+  width: 350px;
+  margin-left: 30px;
 }
 
 footer {
-  height: 30px;
-  width: 100%;
+  height: 50px;
+  width: 100vw;
   text-align: center;
-  ;
-  height: 40px;
-  background-color: #ffe3d8;
+  font-style: italic;
+  background-color: #000;
+  color: #fff;
+} 
+
+footer p {
+  margin-top: 10px;
 }
