@@ -44,7 +44,7 @@ header {
 }
 
 .logo img {
-  width: 100px;
+  width: 120px;
   height: 30px;
   position: absolute;
   left: 10vw;
@@ -162,7 +162,8 @@ h1 {
   margin-top: 20px;
 }
 
-.lima .bloco1, .bloco2 {
+.lima .bloco1,
+.bloco2 {
   margin-left: 6.5vw;
 }
 
@@ -260,7 +261,7 @@ footer {
   font-style: italic;
   background-color: #000;
   color: #fff;
-} 
+}
 
 footer p {
   margin-top: 10px;
