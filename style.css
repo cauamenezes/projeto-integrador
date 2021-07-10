@@ -111,7 +111,7 @@ h1 {
 }
 
 .fpoo img {
-  width: 500px;
+  width: 400px;
 }
 
 .fpoo .bloco1 img {
@@ -120,10 +120,10 @@ h1 {
   top: 1150px;
 }
 
-.fpoo .bloco2 img {
+.fpoo .bloco2 video {
   position: absolute;
   right: 40px;
-  top: 1600px;
+  top: 1620px;
 }
 
 .fpoo .bloco1 {
@@ -169,6 +169,7 @@ h1 {
 
 .lima img {
   width: 500px;
+  height: 350px;
 }
 
 .lima .bloco3 {
@@ -249,8 +250,10 @@ h3 {
   background-color: #ffe3d8;
 }
 
-.hare img {
-  width: 350px;
+.hare img,
+video {
+  width: 300px;
+  height: 250px;
   margin-left: 30px;
 }
 
@@ -258,7 +261,6 @@ footer {
   height: 50px;
   width: 100vw;
   text-align: center;
-  font-style: italic;
   background-color: #000;
   color: #fff;
 }
